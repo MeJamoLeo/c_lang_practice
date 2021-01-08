@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <memory.h>
 
 int main(void)
 {
@@ -13,9 +14,7 @@ int main(void)
   }
 
   // array1の全要素をarray2にコピー
-  for (i=0; i<sizeof(array2)/sizeof(array2[0]); i++){
-    array2[i] = array1[i];
-  }
+  memcpy(array2,array1,sizeof(array1));
 
   for (i=0; i<array1_count ; i++){
     printf("array2[%d]=%d\n",i,array2[i]);
