@@ -5,9 +5,6 @@ int main(void){
   int r;
   double s;
 
-  printf("半径？:");
-  scanf("%d",&r);
-
   do{
     printf("半径?:");
     scanf("%d",&r);
